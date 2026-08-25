@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form onsubmit="showMessage(event)">
+
+        <fieldset style="width: 400px;">
+
+            <p>
+                <label>Full Name:</label>
+                <input type="text" name="fullname" required>
+            </p>
+
+            <p>
+                <label>Department:</label>
+                <input type="text" name="department" required>
+            </p>
+
+            <p>
+                <label>Registration Number:</label>
+                <input type="text" name="regno" required>
+            </p>
+
+            <p>
+                <label>Year:</label>
+                <select name="year" required>
+                    <option value="">Select Year</option>
+                    <option>1st Year</option>
+                    <option>2nd Year</option>
+                    <option>3rd Year</option>
+                    <option>4th Year</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Father's Name:</label>
+                <input type="text" name="fathername" required>
+            </p>
+
+            <p>
+                <label>Password:</label>
+                <input type="password" name="password" required>
+            </p>
+
+            <p>
+                <label>Phone Number:</label>
+                <input type="tel" name="phone" required>
+            </p>
+
+            <p>
+                <label>Date of Birth:</label>
+                <input type="date" name="dob" required>
+            </p>
+
+            <p>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </p>
+
+            <p>
+                <label>Email:</label>
+                <input type="email" name="email" required>
+            </p>
+
+            <p>
+                <label>Hobbies:</label>
+                <input type="checkbox" name="hobby" value="Reading"> Reading
+                <input type="checkbox" name="hobby" value="Sports"> Sports
+                <input type="checkbox" name="hobby" value="Music"> Music
+            </p>
+
+         
+
+            <p>
+                <label>Address:</label><br>
+                <textarea name="address" rows="4" cols="30"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Register">
+              
+                <input type="reset" value="Reset">
+            </p>
+
+        </fieldset>
+
+    </form>
+
+    <h3 id="message"></h3>
+
+    <script>
+        function showMessage(event) {
+            event.preventDefault();
+
+            document.getElementById("message").innerHTML =
+                "Registration Successfully!";
+        }
+    </script>
+
+</body>
+</html>
