@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+
+    <style>
+
+        /* ===== SIMPLE SELECTORS ===== */
+
+        /* Element selector */
+        p {
+            color: #4B5563;
+        }
+
+        /* ID selector */
+        #heading {
+            color: #5B21B6;
+            text-align: center;
+        }
+
+        /* Class selector */
+        .special {
+            background-color: #F3E8FF;
+            color: #7E22CE;
+            padding: 8px;
+        }
+
+        /* Group selector */
+        h3, h4 {
+            color: #0F766E;
+        }
+
+        /* Universal selector */
+        * {
+            font-family: Arial;
+        }
+
+
+        /* ===== COMBINATOR SELECTORS ===== */
+
+        /* Descendant selector */
+        div p {
+            color: #2563EB;
+        }
+
+        /* Child selector */
+        div > h3 {
+            background-color: #CCFBF1;
+            padding: 8px;
+        }
+
+        /* Adjacent sibling selector */
+        h4 + p {
+            color: #EA580C;
+        }
+
+        /* General sibling selector */
+        h4 ~ p {
+            font-size: 20px;
+        }
+
+
+        /* ===== PSEUDO-CLASS SELECTOR ===== */
+
+        a:hover {
+            color: #DB2777;
+            background-color: #FCE7F3;
+        }
+
+
+        /* ===== PSEUDO-ELEMENT SELECTOR ===== */
+
+        p::first-letter {
+            font-size: 30px;
+            color: #9333EA;
+        }
+
+
+        /* ===== ATTRIBUTE SELECTOR ===== */
+
+        input[type="text"] {
+            border: 2px solid #14B8A6;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">CSS Selector Forms</h1>
+
+    <!-- Simple Selectors -->
+
+    <p>Element Selector</p>
+
+    <p class="special">Class Selector</p>
+
+    <h3>Group Selector</h3>
+    <h4>Group Selector</h4>
+
+
+    <!-- Combinator Selectors -->
+
+    <div>
+
+        <h3>Child Selector</h3>
+
+        <p>Descendant Selector</p>
+
+        <h4>Sibling Heading</h4>
+
+        <p>Adjacent Sibling Selector</p>
+
+        <p>General Sibling Selector</p>
+
+    </div>
+
+
+    <!-- Pseudo-class Selector -->
+
+    <h3>Pseudo-class Selector</h3>
+
+    <a href="#">Move mouse over this link</a>
+
+
+    <!-- Pseudo-element Selector -->
+
+    <p>Pseudo-element Selector</p>
+
+
+    <!-- Attribute Selector -->
+
+    <h3>Attribute Selector</h3>
+
+    <input type="text" placeholder="Enter your name">
+
+</body>
+</html>
